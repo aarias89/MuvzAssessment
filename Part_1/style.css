@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+#team .team-header {
+  background-color: #000;
+  text-align: center;
+  padding: 7px;
+  margin-bottom: 1rem;
+}
+#team h2 {
+  display: inline;
+  color: #fff;
+  border-bottom: 2px solid #5292e0;
+  font-weight: 600;
+}
+
+.container {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  width: 50%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  padding: 0 0.9375rem;
+  margin-bottom: 20px;
+}
+
+/* Media Queries */
+
+/* portrait tablets and large phones */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+/* landscape tablets and laptops */
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+  .col {
+    width: 33.33%;
+  }
+}
+/* large screens */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .col {
+    width: 25%;
+  }
+}
